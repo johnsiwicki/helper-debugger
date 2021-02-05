@@ -78,5 +78,4 @@ document.head.appendChild(document.createElement('style')).textContent = perfcss
         l = elements.length;
     for (var i = 0; i < l; ++i) {
         console.log(elements[i].getAttribute("href"))
-        });
-    }
+        };
