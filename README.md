@@ -13,3 +13,8 @@ To make this a bookmarklet
 ```js
 javascript:(function(){document.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/johnsiwicki/helper-debugger/perf-debugger.js';var iframes=document.getElementsByTagName('iframe');for(i=0;i<iframes.length;i++) {iframes[i].contentDocument.body.appendChild(document.createElement('script')).src='https://cdn.jsdelivr.net/gh/johnsiwicki/helper-debugger/perf-debugger.js';}})();
 ```
+
+
+## Todo 
+- Out tel links and whatever is inside the a tag into console
+- Look for a form on the page and have a little message does this work? 
