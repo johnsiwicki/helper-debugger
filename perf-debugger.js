@@ -73,3 +73,11 @@ document.head.appendChild(document.createElement('style')).textContent = perfcss
 
 
  
+document.addEventListener("DOMContentLoaded", function () {
+    var elements = document.querySelectorAll("a[href^='tel:']"),
+        l = elements.length;
+    for (var i = 0; i < l; ++i) {
+        console.log(elements[i].getAttribute("href"))
+        });
+    }
+}, false);
