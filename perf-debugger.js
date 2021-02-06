@@ -71,11 +71,11 @@ script[src] {
 
 document.head.appendChild(document.createElement('style')).textContent = perfcss;
 
-
- 
-
-    var elements = document.querySelectorAll("a[href^='tel:']"),
-        l = elements.length;
+const tels = document.querySelectorAll("a[href^='tel:']"),
+        l = tels.length;
     for (var i = 0; i < l; ++i) {
-        console.log(elements[i].getAttribute("href"))
+          let tellinks = tels[i].getAttribute("href");
+          let telHtml = tels[i].innerHTML;
+          var phoneNumbers = [[tellinks, telHtml]]
+          console.table(phoneNumbers);
         };
