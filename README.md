@@ -16,5 +16,4 @@ javascript:(function(){document.body.appendChild(document.createElement('script'
 
 
 ## Todo 
-- Out tel links and whatever is inside the a tag into console
 - Look for a form on the page and have a little message does this work? 
