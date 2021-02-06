@@ -80,7 +80,7 @@ document.head.appendChild(document.createElement('style')).textContent = perfcss
  // create a new div element
   const newDiv = document.createElement("div");
   newDiv.id = 'debugmode';
-  const newContent = document.createTextNode("Debug Mode");
+  const newContent = document.innerText = "Debug Mode";
   newDiv.appendChild(newContent);
 
   // add the newly created element and its content into the DOM
