@@ -92,4 +92,5 @@ const tels = document.querySelectorAll("a[href^='tel:']"),
           let telHtml = tels[i].innerHTML;
           phoneNumbers.push([tellinks, telHtml]);
   };
-   console.table(phoneNumbers);
+console.warn("Tel Links");
+console.table(phoneNumbers);
