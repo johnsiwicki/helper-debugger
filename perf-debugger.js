@@ -84,11 +84,12 @@ document.head.appendChild(document.createElement('style')).textContent = perfcss
   // add the newly created element and its content into the DOM
   document.body.insertBefore(newDiv, document.body.firstChild);
 
+var phoneNumbers = [];
 const tels = document.querySelectorAll("a[href^='tel:']"),
         l = tels.length;
     for (var i = 0; i < l; ++i) {
           let tellinks = tels[i].getAttribute("href");
           let telHtml = tels[i].innerHTML;
-          var phoneNumbers = [[tellinks, telHtml]]
-          console.table(phoneNumbers);
+          phoneNumbers.push([tellinks, telHtml]);
   };
+   console.table(phoneNumbers);
