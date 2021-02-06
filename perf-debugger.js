@@ -66,10 +66,25 @@ script[src] {
     script[src][async], script[src][defer], script[src][type=module] {
        // display: none;
     }
+
+#debugmode {
+    position: sticky;
+    background: #cacaca;
+    opacity: 0.7;
+}
 `
 
 
-document.head.appendChild(document.createElement('style')).textContent = perfcss;
+document.head.appendChild(document.createElement('style')).textContent = perfcss;''
+
+ // create a new div element
+  const newDiv = document.createElement("div");
+  newDiv.id = 'debugmode';
+  const newContent = document.createTextNode("Debug Mode");
+  newDiv.appendChild(newContent);
+
+  // add the newly created element and its content into the DOM
+document.body.insertBefore(newDiv, document.body.firstChild);
 
 const tels = document.querySelectorAll("a[href^='tel:']"),
         l = tels.length;
@@ -78,4 +93,6 @@ const tels = document.querySelectorAll("a[href^='tel:']"),
           let telHtml = tels[i].innerHTML;
           var phoneNumbers = [[tellinks, telHtml]]
           console.table(phoneNumbers);
-        };
+          let phoneDebug = `<p> ${phoneNumbers} </p>`;
+          document.querySelector("debugmode").append(phoneDebug)
+  };
