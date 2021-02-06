@@ -80,7 +80,7 @@ document.head.appendChild(document.createElement('style')).textContent = perfcss
  // create a new div element
   const newDiv = document.createElement("div");
   newDiv.id = 'debugmode';
-  newDiv.innerText = "<h3>Debug Mode</h3><p>Check Console For More Info</p>";
+  newDiv.innerHTML = "<h3>Debug Mode</h3><p>Check Console For More Info</p>";
   // add the newly created element and its content into the DOM
   document.body.insertBefore(newDiv, document.body.firstChild);
 
