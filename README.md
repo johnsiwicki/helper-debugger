@@ -1,4 +1,4 @@
-# helper-debugger
+# debugger-buddy
 
 Thanks to https://gist.github.com/tkadlec/683b26344cde774170b94c0fcf0088b4  For help 
 
